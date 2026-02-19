@@ -1,0 +1,146 @@
+.services {
+  padding: 60px 8%;
+  color: white;
+  background-color: #13233a;
+  min-height: 100vh;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.services-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.services-top h2 {
+  font-size: 32px;
+}
+
+.services-top span {
+  color: #ff7a00;
+}
+
+.services-top p {
+  max-width: 400px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.services-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.image-box {
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #13233a;
+  border: none;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 8px;
+}
+
+.dots span {
+  width: 8px;
+  height: 8px;
+  background: #777;
+  border-radius: 50%;
+}
+
+.dots .active {
+  width: 20px;
+  background: #ff7a00;
+  border-radius: 10px;
+}
+/*  Responsive */
+@media (max-width: 1024px) {
+  .services-container {
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  .card {
+    width: 45%; 
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .services-top h2 {
+    font-size: 28px;
+  }
+  .services-top p {
+    font-size: 13px;
+    max-width: 100%;
+  }
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .services-top h2 {
+    font-size: 24px;
+  }
+  .services-top p {
+    font-size: 12px;
+  }
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+}

@@ -1,8 +1,17 @@
+import("./Home.css")
+import Homepage from "../assets/Homepage.png";
 const Home=()=>{
     return(
-        <>
-       <h2>My Home page</h2>
-        </>
+        <section
+              className="services"
+              style={{
+                backgroundImage: `url(${Homepage})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+              >
+              </section>
     )
 }
 export default Home

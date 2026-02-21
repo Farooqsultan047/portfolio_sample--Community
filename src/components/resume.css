@@ -1,0 +1,150 @@
+.container{
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* heading center */
+.container h1{
+ margin-left: 200px;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.container span{
+    color: hsl(0, 98%, 49%);
+}
+/* two columns */
+.timeline{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* equal width */
+.first-section,
+.second-section{
+  flex: 1;
+ 
+}
+
+/* same spacing for all items */
+.item{
+  margin-bottom: 105px;
+}
+.itemi{
+    margin-bottom: 50px;
+}
+/* text styles */
+h3{
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #2d3748;
+}
+
+p{
+  color: #718096;
+  line-height: 1.6;
+}
+
+
+.timeline{
+  position: relative;
+}
+
+/* 3 center circles */
+.timeline{
+  position: relative;
+}
+
+/* center vertical line */
+.timeline::before{
+  content: "";
+  position: absolute;
+  left: 40%;
+  top: 102px;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 32%;
+  background: #ac0c64;
+}
+
+/* 3 touching circles */
+.timeline::after {
+  content: "";
+  position: absolute;
+  left: 40%;
+  top: 100px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 180px; /* total height adjust for spacing */
+
+  background:
+    radial-gradient(circle at center, #e53e3e 8px, transparent 9px) 50% 0px,
+    radial-gradient(circle at center, #000 8px, transparent 9px) 50% 80px,
+    radial-gradient(circle at center, #e53e3e 8px, transparent 9px) 50% 160px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px; /* circle size */
+}
+
+
+
+/* ===== MOBILE FIX (circles + full layout) ===== */
+@media (max-width: 480px){
+
+  .container{
+    padding: 30px 15px;
+  }
+
+  .container h1{
+    margin-left: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .timeline{
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .first-section,
+  .second-section{
+    width: 100%;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  .item,
+  .itemi{
+    margin-bottom: 25px;
+  }
+
+  /* center line */
+  .timeline::before{
+    left: 50%;
+    top: 95px;
+    height: 32%;
+    transform: translateX(-50%);
+  }
+
+  /* 3 circles perfectly centered */
+  .timeline::after{
+    left: 50%;
+    top: 95px;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 180px;
+    background:
+      radial-gradient(circle at center, #e53e3e 8px, transparent 9px) 50% 0px,
+      radial-gradient(circle at center, #000 8px, transparent 9px) 50% 80px,
+      radial-gradient(circle at center, #e53e3e 8px, transparent 9px) 50% 160px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+}

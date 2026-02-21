@@ -6,6 +6,8 @@
   justify-content: space-between;
   border-radius: 30px;
   font-family: sans-serif;
+  position: sticky;
+  top: 0;
 }
 
 .navber ul {

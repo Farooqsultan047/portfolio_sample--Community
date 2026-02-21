@@ -11,7 +11,7 @@ const Contect = () => {
       </div>
     
       <div className="footer-content">
-        {/* Left: Logo + Text + Social */}
+       
         <div className="footer-left">
           <div className="logo">
             <div className="logo-icon">JC</div>
@@ -26,7 +26,7 @@ const Contect = () => {
          
         </div>
 
-        {/* Center: Navigation & Contact */}
+      
         <div className="footer-center">
           <div className="nav">
             <h4>Navigation</h4>
@@ -48,7 +48,7 @@ const Contect = () => {
           </div>
         </div>
 
-        {/* Right: Newsletter */}
+    
         <div className="footer-right">
           <h4>Get the latest information</h4>
           <div className="newsletter">

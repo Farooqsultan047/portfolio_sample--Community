@@ -3,6 +3,7 @@ import "./project.css";
 import hire from "../assets/hire.png"
 import Frame11 from"..//assets/Frame11.png"
 import image from "../assets/image.png"
+import component from "../assets/component.png"
 const Project = () =>{
     return(
       <div className="Head">
@@ -85,8 +86,8 @@ const Project = () =>{
         className="image"
         style={{ backgroundImage: `url(${image})` }}
       ></div>
-      <h3 className="name">Fawzi Sayed</h3>
-      <p className="position">UI/UX Designer</p>
+      <h3 className="name">Farooq Sultan</h3>
+      <p className="position">Mern Stack Developer</p>
       <p className="testimonial">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -97,7 +98,35 @@ const Project = () =>{
 </div>
 </div>
 
+
+
+<div className="All">
+  <div className="have">
+    <h1>Have an Awsome Project Idea? <span className="let"> Let's Discuss</span></h1>
+    <input type="text" placeholder="Enter your email" />
+    <button className="submit">Send</button>
+    <p>4.9?/5 Average Ratings</p>
+    <p>25+ Winning Awards</p>
+    <p>Certified Product Designer</p>
+     </div>
+    <div className="image1" style={{ backgroundImage: `url(${component})` }}> </div>
+    
+  </div>
+
+
+
+
+
+
+
 </div>
+
+
+
+
+
+
+
     )
     
 } 

@@ -11,7 +11,7 @@
   .services{
     min-height: 70vh;
     padding: 25px 15px;
-    background-position: center top; /* better crop mobile */
+    background-position: center top; 
   }
 }
 

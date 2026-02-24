@@ -8,36 +8,44 @@ const Project = () =>{
     return(
       <div className="Head">
        <div className="bedy">
- <section 
-  className="hare" 
-  style={{ 
-    backgroundImage: `url(${hire})`, 
-    backgroundSize: "cover", 
-    backgroundPosition: "left", 
-    backgroundRepeat: "no-repeat", 
 
-  }}
-  >
-    <div className="box">
-      <div className="bex">
-   <h1>
-   Why <span>Hire me</span>?
-   </h1>
-   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat fugiat sapiente, commodi consectetur ipsa hic fuga quos facere! Quis eos dignissimos mollitia totam sapiente dolore ut blanditiis vel hic animi!</p>
-   </div>
+    <section className="hire">
+      <div className="hire-container">
 
-   <div className="compelet">
-   <h3 className="headind1">450+</h3>
-   <p>Project completed</p>
-   <div className="least">
-    <h3> 455+</h3>
-    <p> project Completed</p>
-    </div>
-    <button>Hire me</button>
-    </div>
+        {/* Left Image */}
+        <div className="hire-img">
+          <img src={hire} alt="profile" />
+        </div>
 
-  </div>
-</section>
+        {/* Right Content */}
+        <div className="hire-content">
+          <h2>
+            Why <span>Hire me?</span>
+          </h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Duis lacus nunc, posuere in justo vulputate, bibendum sodales.
+          </p>
+
+          <div className="stats">
+            <div>
+              <h3>450+</h3>
+              <p>Project Completed</p>
+            </div>
+
+            <div>
+              <h3>450+</h3>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <button className="hire-btn">Hire me</button>
+        </div>
+
+      </div>
+    </section>
+
 </div>
 <div className="head2">
   <div className="top-row">
@@ -113,9 +121,10 @@ const Project = () =>{
     
   </div>
 
-
-
-
+<div className="images">
+  
+  <h1>From My blog Post</h1>
+  </div>
 
 
 

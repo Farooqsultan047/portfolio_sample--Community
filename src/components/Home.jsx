@@ -1,11 +1,11 @@
 import("./Home.css")
-import Frametoo from "../assets/Frametoo.png";
+import Property10 from "../assets/Property10.png";
 const Home=()=>{
     return(
         <section
               className="services"
               style={{
-                backgroundImage: `url(${Frametoo})`,
+                backgroundImage: `url(${Property10})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",

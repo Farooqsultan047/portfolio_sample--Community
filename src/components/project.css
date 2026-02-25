@@ -12,7 +12,7 @@
   flex-wrap: wrap;
 }
 
-/* Image */
+
 .hire-img {
   flex: 1 1 400px;
   text-align: center;
@@ -23,7 +23,7 @@
   max-width: 360px;
 }
 
-/* Content */
+
 .hire-content {
   flex: 1 1 400px;
 }
@@ -43,7 +43,7 @@
   margin-bottom: 25px;
 }
 
-/* Stats */
+
 .stats {
   display: flex;
   gap: 40px;
@@ -55,7 +55,6 @@
   margin-bottom: 5px;
 }
 
-/* Button */
 .hire-btn {
   padding: 12px 32px;
   border-radius: 12px;
@@ -71,7 +70,7 @@
   color: white;
 }
 
-/* 📱 Mobile */
+
 @media (max-width: 768px) {
   .hire-container {
     flex-direction: column;
@@ -357,7 +356,7 @@
   color: rgb(216, 11, 11);
 }
 
-.image1 {
+.image1 {                        
   width: 100%;
   height: 150px;
   background-size: cover;
@@ -365,7 +364,7 @@
   border-radius: 15px;
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
   .hava {
     flex-direction: column;
@@ -394,5 +393,128 @@
 
   button {
     width: 100%;
+  }
+}
+.images {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.images {
+  position: relative;
+}
+
+
+
+.image2,
+.image3,
+.image4 {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.image2,
+.image3,
+.image4 {
+  flex: 1;
+}
+
+
+
+
+
+
+
+
+.images {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+
+.images h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+
+.button {
+  position: absolute;
+  right: 20px;
+  top: 85px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #ff7a2f;
+  color: white;
+  cursor: pointer;
+}
+
+
+.images-row {
+  display: flex;
+  gap: 10px;
+
+}
+
+.image-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.image-card .img {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+/* text */
+.image-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c53030;
+}
+
+.image-card span {
+
+  font-size: 14px;
+  color: black;
+}
+
+.image-card p {
+ color: blueviolet;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .button {
+    position: static;
+    align-self: flex-start;
+  }
+
+  .images-row {
+    flex-direction: column;
   }
 }

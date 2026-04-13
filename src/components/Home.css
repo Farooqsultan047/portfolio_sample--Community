@@ -42,7 +42,8 @@
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
-  background: #5d4eaf;
+  background:gold;
+  color: #111;
   padding: 6px 18px;
   border-radius: 25px;
   font-size: 14px;
